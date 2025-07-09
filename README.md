@@ -1,6 +1,6 @@
-- 👋 Hi, I’m @amanksinghh, Jr. Flutter Developer
+- 👋 Hi, I’m @amanksinghh, Sr. Flutter Developer
 - 👀 I’m interested in Application Development
-- 🌱 I’m currently Developing Applications and learning Flutter
+- 🌱 I’m currently Developing Applications.
 - 📫 How to reach me amanksinghh@gmail.com
 
 <!---
