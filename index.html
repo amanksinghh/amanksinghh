@@ -8,141 +8,185 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
 
-  body {
-    background: linear-gradient(135deg, #0f172a, #1e293b);
-    color: #f1f5f9;
-    line-height: 1.6;
-  }
+body {
+  background: radial-gradient(circle at top left, #1e293b, #0f172a 60%);
+  color: #f1f5f9;
+}
 
-  header {
-    text-align: center;
-    padding: 80px 20px 60px;
-  }
+/* NAVBAR */
+nav {
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(12px);
+  background: rgba(15, 23, 42, 0.6);
+  padding: 15px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
 
-  header h1 {
-    font-size: 48px;
-    font-weight: 700;
-    background: linear-gradient(90deg, #38bdf8, #6366f1);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+nav h3 {
+  color: #38bdf8;
+}
 
-  header p {
-    margin-top: 15px;
-    font-size: 18px;
-    color: #cbd5e1;
-  }
+nav a {
+  color: #cbd5e1;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
 
-  .btn {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 12px 26px;
-    border-radius: 30px;
-    background: linear-gradient(90deg, #38bdf8, #6366f1);
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.3s ease;
-  }
+nav a:hover {
+  color: #38bdf8;
+}
 
-  .btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(99,102,241,0.4);
-  }
+/* HERO */
+header {
+  text-align: center;
+  padding: 120px 20px 80px;
+}
 
-  section {
-    max-width: 1100px;
-    margin: auto;
-    padding: 60px 20px;
-  }
+header h1 {
+  font-size: 52px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #38bdf8, #6366f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-  h2 {
-    font-size: 28px;
-    margin-bottom: 30px;
-    color: #38bdf8;
-    text-align: center;
-  }
+.typing {
+  font-size: 20px;
+  margin-top: 15px;
+  color: #cbd5e1;
+  min-height: 28px;
+}
 
-  .card {
-    background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(255,255,255,0.08);
-    backdrop-filter: blur(10px);
-    border-radius: 16px;
-    padding: 25px;
-    margin-bottom: 25px;
-    transition: 0.3s ease;
-  }
+.btn {
+  display: inline-block;
+  margin: 25px 10px 0;
+  padding: 12px 28px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #38bdf8, #6366f1);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
 
-  .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
-  }
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(99,102,241,0.4);
+}
 
-  .skills span {
-    display: inline-block;
-    background: linear-gradient(90deg, #334155, #1e293b);
-    padding: 8px 14px;
-    margin: 6px;
-    border-radius: 20px;
-    font-size: 14px;
-    border: 1px solid rgba(255,255,255,0.1);
-  }
+/* SECTIONS */
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 80px 20px;
+}
 
-  a.project-link {
-    display: inline-block;
-    margin-top: 12px;
-    color: #38bdf8;
-    text-decoration: none;
-    font-weight: 600;
-  }
+h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 40px;
+  color: #38bdf8;
+}
 
-  footer {
-    text-align: center;
-    padding: 40px 20px;
-    color: #94a3b8;
-    font-size: 14px;
-  }
+/* CARDS */
+.card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  padding: 30px;
+  margin-bottom: 30px;
+  transition: 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* SKILLS */
+.skills span {
+  display: inline-block;
+  background: linear-gradient(90deg, #334155, #1e293b);
+  padding: 8px 16px;
+  margin: 6px;
+  border-radius: 20px;
+  font-size: 14px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* PROJECT LINKS */
+.project-link {
+  display: inline-block;
+  margin-top: 14px;
+  color: #38bdf8;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* CONTACT */
+.contact a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  color: #94a3b8;
+}
 </style>
 </head>
 
 <body>
 
+<nav>
+  <h3>Aman Singh</h3>
+  <div>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
 <header>
-  <h1>Hi, I'm Aman Singh 👋</h1>
-  <p>Flutter Developer • 3+ Years Experience • Production-Ready Mobile Apps</p>
-  <a href="#projects" class="btn">View My Work</a>
+  <h1>Flutter Developer</h1>
+  <div class="typing" id="typing"></div>
+  <a href="#projects" class="btn">View Projects</a>
+  <a href="Aman_Singh_Resume.pdf" class="btn" download>Download Resume</a>
 </header>
 
-<section>
+<section id="about">
   <h2>About Me</h2>
   <div class="card">
-    <p>
-      I'm a results-driven Flutter developer with 3+ years of experience building scalable,
-      high-performance cross-platform mobile applications. I specialize in Flutter, Firebase,
-      REST API integrations, and deploying production apps on both Play Store and App Store.
-    </p>
+    I’m a results-driven Flutter developer with 3+ years of experience building scalable,
+    high-performance cross-platform apps. I specialize in production deployments,
+    real-time systems, REST APIs, Firebase, and polished UI/UX.
   </div>
 </section>
 
-<section>
+<section id="skills">
   <h2>Technical Skills</h2>
   <div class="skills" style="text-align:center;">
-    <span>Flutter</span>
-    <span>Dart</span>
-    <span>Firebase</span>
-    <span>REST APIs</span>
-    <span>State Management</span>
-    <span>Git</span>
-    <span>Postman</span>
-    <span>UI/UX Implementation</span>
-    <span>App Performance</span>
+    <span>Flutter</span><span>Dart</span><span>Firebase</span>
+    <span>REST APIs</span><span>State Management</span>
+    <span>Git</span><span>Postman</span><span>UI/UX</span>
+    <span>Performance Optimization</span>
   </div>
 </section>
 
@@ -150,35 +194,67 @@
   <h2>Featured Projects</h2>
 
   <div class="card">
-    <h3>Pozitive Energy App (Live)</h3>
-    <p>
-      Business mobile solution with real-time data synchronization, secure operations,
-      and enterprise-grade workflow management for field teams.
-    </p>
-    <a class="project-link" href="https://play.google.com/store/apps/details?id=com.PozitiveEnergy" target="_blank">🚀 View on Play Store</a>
+    <h3>Pozitive Energy App</h3>
+    <p>Enterprise business app with real-time sync, secure operations and workflow automation.</p>
+    <a class="project-link" href="https://play.google.com/store/apps/details?id=com.PozitiveEnergy" target="_blank">View on Play Store →</a>
   </div>
 
   <div class="card">
-    <h3>PE Sales App (Live)</h3>
-    <p>
-      Location-based tracking system for field sales agents with real-time movement
-      monitoring, task tracking, and backend reporting.
-    </p>
-    <a class="project-link" href="https://play.google.com/store/apps/details?id=com.pozitive.pe_sales_app" target="_blank">📍 View on Play Store</a>
+    <h3>PE Sales App</h3>
+    <p>Location tracking and monitoring system for field agents with live movement data.</p>
+    <a class="project-link" href="https://play.google.com/store/apps/details?id=com.pozitive.pe_sales_app" target="_blank">View on Play Store →</a>
   </div>
 
   <div class="card">
     <h3>Smart Attendance App</h3>
-    <p>
-      Digital attendance tracking application with secure authentication,
-      real-time data management, and employee activity monitoring.
-    </p>
+    <p>Digital attendance system with authentication and real-time data management.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <div class="card contact" style="text-align:center;">
+    📧 Email: <a href="mailto:yourmail@email.com">yourmail@email.com</a><br><br>
+    💼 LinkedIn: <a href="#">Add your LinkedIn link</a><br><br>
+    💻 GitHub: <a href="https://github.com/amanksinghh" target="_blank">github.com/amanksinghh</a>
   </div>
 </section>
 
 <footer>
-  © 2026 Aman Singh • Flutter Developer Portfolio
+  © 2026 Aman Singh • Built with Flutter mindset 🚀
 </footer>
+
+<script>
+const roles = [
+  "Building Production-Ready Mobile Apps",
+  "Flutter • Firebase • REST APIs",
+  "Crafting Smooth & Scalable Experiences"
+];
+
+let i = 0, j = 0, current = "", isDeleting = false;
+const typingEl = document.getElementById("typing");
+
+function type() {
+  current = roles[i];
+  if (isDeleting) {
+    typingEl.textContent = current.substring(0, j--);
+    if (j < 0) {
+      isDeleting = false;
+      i = (i + 1) % roles.length;
+    }
+  } else {
+    typingEl.textContent = current.substring(0, j++);
+    if (j > current.length) {
+      isDeleting = true;
+      setTimeout(type, 1200);
+      return;
+    }
+  }
+  setTimeout(type, isDeleting ? 40 : 80);
+}
+
+type();
+</script>
 
 </body>
 </html>
